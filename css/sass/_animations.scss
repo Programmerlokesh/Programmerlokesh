@@ -1,0 +1,31 @@
+// Animations Styles Start *****************************************
+@keyframes header-bg-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    visibility: visible;
+  }
+  to {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes navAnimation {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// Animations Styles End ##############################################

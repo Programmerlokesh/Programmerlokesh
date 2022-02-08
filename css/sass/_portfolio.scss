@@ -1,0 +1,123 @@
+// Portfolio Section Styles Start *****************************************
+
+.portfolio-section {
+  padding: 10rem 10rem;
+  border-bottom: 5px var(--black) solid;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  @include respond(tab-port) {
+    padding: 7rem 1rem;
+    background: linear-gradient(180deg, #2c5364);
+  }
+
+  h3 {
+    text-align: center;
+  }
+  span {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+}
+
+.portfolio {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  @include respond(tab-port) {
+    grid-template-columns: auto;
+    padding: 5rem 1rem;
+  }
+
+  &__box {
+    height: auto;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+
+    &:hover .img-box img {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.portfolio-main-box {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: column;
+
+  .img-box {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  .description-box {
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-2px);
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      color: white;
+      margin-top: -1.5rem;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding: 0 1rem 2rem 1rem;
+    }
+
+    a {
+      background-color: rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: white;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: 0.3s;
+      border-radius: 5px;
+      margin-right: 1rem;
+
+      &:hover {
+        background-color: rgba(0, 140, 255, 0.3);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio:hover .portfolio__box:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transform: scale(0.97);
+  }
+}
+
+// Portfolio Section Styles End #######################################
