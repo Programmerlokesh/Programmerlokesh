@@ -14,7 +14,7 @@
 
 - 👨‍💻 All of my projects are available at [https://lokeshdebnath.netlify.app/](https://lokeshdebnath.netlify.app/)
 
-- 💬 Ask me about **React, JavaScript, About Web Development**
+- 💬 Ask me about **React, JavaScript, Web Development**
 
 - 📫 How to reach me **lokeshdebnath8@gmail.com**
 
