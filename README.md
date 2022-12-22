@@ -12,7 +12,7 @@
 
 - 🌱 I’m currently learning **React**
 
-- 👨‍💻 All of my projects are available at [https://lokeshdebnath.netlify.app/](https://lokeshdebnath.netlify.app/)
+- 👨‍💻 All of my projects are available at [(https://lokeshdebnath.vercel.app/)](https://lokeshdebnath.vercel.app/)
 
 - 💬 Ask me about **React, JavaScript, Web Development**
 
